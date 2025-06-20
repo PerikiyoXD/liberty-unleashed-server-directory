@@ -1,0 +1,17 @@
+{
+  "port": 80,
+  "allowedUserAgent": "LU-Server/0.1",
+  "staleTimeout": "2m40s",
+  "blacklist": [
+    "31.220.49.160",
+    "138.68.97.15", 
+    "46.101.43.49"
+  ],
+  "officialServers": [
+    "12.141.44.231:8001",
+    "12.141.44.231:9000",
+    "12.141.44.231:8080"
+  ],
+  "logFile": "lusd_server.log",
+  "logEnabled": true
+}

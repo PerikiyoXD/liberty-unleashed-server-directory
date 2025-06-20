@@ -1,0 +1,103 @@
+# Binaries and executables
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+lusd
+lusd-*
+
+# Build directories
+build/
+dist/
+out/
+
+# Log files
+*.log
+logs/
+lusd_server.log
+
+# Configuration files (keep examples)
+config.json
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+tmp/
+
+# Test files
+*.test
+*.out
+coverage.txt
+coverage.html
+
+# Don't ignore code directories
+!cmd/**
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.vim/
+.emacs.d/
+
+# Go specific
+vendor/
+go.work
+go.work.sum
+
+# Docker
+.dockerignore
+
+# Deployment
+deploy/
+
+# Node.js (if using any build tools)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Backup files
+*.bak
+*.backup
+
+# Cache files
+.cache/
+*.cache
+
+# IDE files
+.vscode/settings.json
+.idea/
+*.iml
+
+# Testing
+.nyc_output/
+coverage/
+
+# Compiled Object files
+*.o
+*.a
+*.lib

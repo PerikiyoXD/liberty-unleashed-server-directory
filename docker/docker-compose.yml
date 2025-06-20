@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  lusd-server:
+    build: ..
+    container_name: lusd-server
+    ports:
+      - "80:80"
+    volumes:
+      - ../configs/config.json:/app/config.json:ro
+      - ../logs:/app/logs
+    environment:
+      - TZ=UTC
+      - LUSD_LOG_ENABLED=true
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    networks:
+      - lusd-network
+
+networks:
+  lusd-network:
+    driver: bridge
